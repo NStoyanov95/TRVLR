@@ -8,7 +8,7 @@ export const Navigation = () => {
     };
 
     return (
-        <nav className="flex justify-between items-baseline bg-gray-200 max-w-full shadow-lg">
+        <nav className="flex justify-between items-baseline bg-gray-200 w-full shadow-lg">
             <div className="p-5">
                 <h3>TRVLR:</h3>
             </div>
