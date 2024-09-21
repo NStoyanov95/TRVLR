@@ -80,18 +80,11 @@ input:focus,
 textarea:focus,
 select:focus,
 button:focus {
-    border-color: #3b82f6;
     outline: none;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
 }
 
 button {
-    background-color: #3b82f6;
     color: white;
     cursor: pointer;
     padding: 0.5rem 1rem;
-}
-
-button:hover {
-    background-color: #2563eb;
 }
