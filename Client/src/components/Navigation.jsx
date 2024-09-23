@@ -21,7 +21,7 @@ export const Navigation = () => {
             </button>
 
             <ul
-                className={`md:hidden absolute flex flex-col gap-2 items-center right-0 top-16 mt-2 min-w-full bg-white shadow-lg rounded-s p-2 z-50 ${
+                className={`md:hidden absolute flex flex-col gap-2 items-center right-0 top-16 mt-2 min-w-full bg-black text-white opacity-90 shadow-lg rounded-s p-2 z-50 ${
                     isOpen ? "block" : "hidden"
                 } space-y-2 mt-3`}
             >
@@ -49,6 +49,14 @@ export const Navigation = () => {
                         Contacts
                     </Link>
                 </li>
+                <li>
+                    <Link
+                        to="/contact"
+                        className="hover:font-bold cursor-pointer block"
+                    >
+                        Destinations
+                    </Link>
+                </li>
             </ul>
 
             <ul className="hidden md:flex">
@@ -57,8 +65,9 @@ export const Navigation = () => {
                 </li>
                 <li className="p-5 hover:font-bold cursor-pointer">About Us</li>
                 <li className="p-5 hover:font-bold cursor-pointer">Contacts</li>
-                <li className="p-5 hover:font-bold cursor-pointer">Login</li>
-                <li className="p-5 hover:font-bold cursor-pointer">Logout</li>
+                <li className="p-5 hover:font-bold cursor-pointer">
+                    Destinations
+                </li>
             </ul>
         </nav>
     );
