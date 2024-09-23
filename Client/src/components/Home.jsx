@@ -21,7 +21,7 @@ export const Home = () => {
                 style={{ backgroundImage: `url(${banner})` }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-                <div className="relative text-gray-50 md:w-4/5 m-auto">
+                <div className="relative text-gray-50 md:w-4/5 m-auto md:p-6">
                     <h3 className="text-center">Start Your Journey</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -49,6 +49,32 @@ export const Home = () => {
                 <div className="md:w-36 shadow-lg p-6 bg-gray-100 rounded-xl">
                     <h5 className="text-center">Beach</h5>
                 </div>
+            </div>
+            <div className="md:w-4/5 m-auto my-6 bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-center">Our Mission</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sequi atque aliquid aspernatur, natus aut alias nostrum.
+                    Eum, veritatis dolore corrupti repellat illum ab, tempora id
+                    totam, ipsam magnam delectus nostrum. Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Veritatis alias pariatur
+                    tempore dolor consectetur? Velit, accusantium harum non
+                    facilis inventore necessitatibus natus molestiae ipsam
+                    consectetur? Rerum sunt provident soluta laborum!
+                </p>
+            </div>
+            <div className="md:w-4/5 m-auto my-6 bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-center">Why Us?</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sequi atque aliquid aspernatur, natus aut alias nostrum.
+                    Eum, veritatis dolore corrupti repellat illum ab, tempora id
+                    totam, ipsam magnam delectus nostrum. Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Veritatis alias pariatur
+                    tempore dolor consectetur? Velit, accusantium harum non
+                    facilis inventore necessitatibus natus molestiae ipsam
+                    consectetur? Rerum sunt provident soluta laborum!
+                </p>
             </div>
         </>
     );
