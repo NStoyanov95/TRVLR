@@ -6,6 +6,15 @@ import camping from "../assets/camping.jpeg";
 import beach from "../assets/beach.jpg";
 
 import { BestDestinationCard } from "./BestDestinationCard";
+import { ShortcutButtons } from "./ShortcutButtons";
+44;
+
+const shortcutButtonsImages = [
+    { id: 1, image: hotel },
+    { id: 2, image: cruise },
+    { id: 3, image: camping },
+    { id: 4, image: beach },
+];
 
 export const Home = () => {
     return (
@@ -43,23 +52,9 @@ export const Home = () => {
             </div>
 
             <div className="md:flex justify-center md:w-4/5 rounded-lg md:gap-20 m-auto md:p-2 bg-white">
-                <div
-                    className="md:w-52  h-40 shadow-lg p-6 bg-center bg-cover rounded"
-                    style={{ backgroundImage: `url(${hotel})` }}
-                ></div>
-
-                <div
-                    className="md:w-52 h-40 shadow-lg p-6 bg-center bg-cover rounded"
-                    style={{ backgroundImage: `url(${cruise})` }}
-                ></div>
-                <div
-                    className="md:w-52 h-40 shadow-lg p-6 bg-center bg-cover rounded"
-                    style={{ backgroundImage: `url(${camping})` }}
-                ></div>
-                <div
-                    className="md:w-52 h-40 shadow-lg p-6 bg-center bg-cover rounded"
-                    style={{ backgroundImage: `url(${beach})` }}
-                ></div>
+                {shortcutButtonsImages.map((image) => (
+                    <ShortcutButtons key={image.id} image={image.image} />
+                ))}
             </div>
             <div className="md:w-4/5 m-auto my-6 bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-center">Our Mission</h3>
