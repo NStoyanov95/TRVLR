@@ -51,7 +51,7 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className="md:flex justify-center md:w-4/5 rounded-lg md:gap-20 m-auto md:p-2 bg-white">
+            <div className="md:flex md:w-4/5 m-auto 2xl:w-1/2 bg-white md:p-2 rounded">
                 {shortcutButtonsImages.map((image) => (
                     <ShortcutButtons key={image.id} image={image.image} />
                 ))}
