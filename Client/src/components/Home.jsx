@@ -1,5 +1,10 @@
 import caravan from "../assets/caravan.jpeg";
 import banner from "../assets/banner.jpg";
+import hotel from "../assets/hotel.jpg";
+import cruise from "../assets/cruise.jpg";
+import camping from "../assets/camping.jpeg";
+import beach from "../assets/beach.jpg";
+
 import { BestDestinationCard } from "./BestDestinationCard";
 
 export const Home = () => {
@@ -36,19 +41,25 @@ export const Home = () => {
                     </p>
                 </div>
             </div>
+
             <div className="md:flex justify-center md:w-4/5 rounded-lg md:gap-20 m-auto md:p-2 bg-white">
-                <div className="md:w-36 shadow-lg p-6 bg-gray-100 rounded-xl">
-                    <h5 className="text-center">Hotels</h5>
-                </div>
-                <div className="md:w-36 shadow-lg p-6 bg-gray-100 rounded-xl">
-                    <h5 className="text-center">Cruises</h5>
-                </div>
-                <div className="md:w-36 shadow-lg p-6 bg-gray-100 rounded-xl">
-                    <h5 className="text-center">Campings</h5>
-                </div>
-                <div className="md:w-36 shadow-lg p-6 bg-gray-100 rounded-xl">
-                    <h5 className="text-center">Beach</h5>
-                </div>
+                <div
+                    className="md:w-52  h-40 shadow-lg p-6 bg-center bg-cover rounded"
+                    style={{ backgroundImage: `url(${hotel})` }}
+                ></div>
+
+                <div
+                    className="md:w-52 h-40 shadow-lg p-6 bg-center bg-cover rounded"
+                    style={{ backgroundImage: `url(${cruise})` }}
+                ></div>
+                <div
+                    className="md:w-52 h-40 shadow-lg p-6 bg-center bg-cover rounded"
+                    style={{ backgroundImage: `url(${camping})` }}
+                ></div>
+                <div
+                    className="md:w-52 h-40 shadow-lg p-6 bg-center bg-cover rounded"
+                    style={{ backgroundImage: `url(${beach})` }}
+                ></div>
             </div>
             <div className="md:w-4/5 m-auto my-6 bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-center">Our Mission</h3>
