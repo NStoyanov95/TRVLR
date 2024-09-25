@@ -29,6 +29,8 @@ export const Home = () => {
         getDestinations();
     }, []);
 
+    console.log(destinations);
+
     return (
         <>
             <div
