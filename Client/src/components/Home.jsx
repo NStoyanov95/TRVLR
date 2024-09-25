@@ -7,6 +7,8 @@ import beach from "../assets/beach.jpg";
 import { BestDestinationCard } from "./BestDestinationCard";
 import { ShortcutButtons } from "./ShortcutButtons";
 import { HeroSection } from "./HeroSection";
+import { useEffect, useState } from "react";
+import { fetchLast3Destinations } from "../services/destinationsService";
 
 const shortcutButtonsImages = [
     { id: 1, image: hotel },
@@ -16,14 +18,32 @@ const shortcutButtonsImages = [
 ];
 
 export const Home = () => {
+    const [destinations, setDestinations] = useState([]);
+
+    useEffect(() => {
+        const getDestinations = async () => {
+            const fetchedDestinations = await fetchLast3Destinations();
+            setDestinations(fetchedDestinations);
+        };
+
+        getDestinations();
+    }, []);
+    console.log(destinations);
+
     return (
         <>
             <HeroSection />
             <div className="md:w-4/5 h-auto m-auto py-4 ">
                 <div className="md:flex grid-flow-row md:gap-2 lg:gap-9 justify-center">
-                    <BestDestinationCard />
-                    <BestDestinationCard />
-                    <BestDestinationCard />
+                    {destinations.map((destination) => (
+                        <BestDestinationCard
+                            key={destination.id}
+                            image={destination.image}
+                            city={destination.city}
+                            country={destination.country}
+                            description={destination.description}
+                        />
+                    ))}
                 </div>
             </div>
             <div
