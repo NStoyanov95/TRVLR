@@ -1,6 +1,6 @@
 export const GeneralInformationSection = () => {
     return (
-        <div className="bg-white">
+        <div className="bg-white text-center md:text-left">
             <div className="md:w-4/5 h-auto m-auto md:p-10 2xl:w-1/2">
                 <div>
                     <div className="py-10">

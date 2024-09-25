@@ -17,7 +17,7 @@ export const ServicesSection = () => {
     return (
         <>
             <div
-                className=" relative bg-center bg-cover w-full h-auto p-16"
+                className=" relative bg-center bg-cover w-full h-auto p-16 text-center md:text-left"
                 style={{ backgroundImage: `url(${banner})` }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -36,7 +36,7 @@ export const ServicesSection = () => {
                     </p>
                 </div>
             </div>
-            <div className="bg-white md:p-6 ">
+            <div className="bg-white md:p-6 text-center md:text-left">
                 <div className="2xl:w-1/2 m-auto md:w-4/5">
                     <div className="m-auto py-10">
                         <h2>Our Services</h2>

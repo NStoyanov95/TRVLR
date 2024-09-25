@@ -15,7 +15,7 @@ export const BestDestinationsSection = () => {
     }, []);
 
     return (
-        <div className="md:w-4/5 h-auto m-auto md:p-10 2xl:w-1/2">
+        <div className="md:w-4/5 h-auto m-auto md:p-10 2xl:w-1/2 text-center md:text-left">
             <div className="my-10">
                 <h2>Best Place to visit</h2>
                 <p className="text-gray-600">
