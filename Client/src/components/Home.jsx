@@ -2,7 +2,7 @@ import banner from "../assets/banner.jpg";
 import hotel from "../assets/hotel.jpg";
 import cruise from "../assets/cruise.jpg";
 import camping from "../assets/camping.jpeg";
-import beach from "../assets/beach.jpg";
+import plane from "../assets/plane.jpg";
 
 import { BestDestinationCard } from "./BestDestinationCard";
 import { ShortcutButtons } from "./ShortcutButtons";
@@ -15,7 +15,7 @@ const shortcutButtonsImages = [
     { id: 1, image: hotel },
     { id: 2, image: cruise },
     { id: 3, image: camping },
-    { id: 4, image: beach },
+    { id: 4, image: plane },
 ];
 
 export const Home = () => {
