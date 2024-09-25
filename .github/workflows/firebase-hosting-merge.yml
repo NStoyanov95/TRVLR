@@ -11,9 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install Node.js dependencies
+        run: npm install
+        working-directory: ./Client # Specify Client folder
+
+      - name: Build project
+        run: npm run build
+        working-directory: ./Client # Build inside Client folder
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRVLR_4E058 }}
           channelId: live
           projectId: trvlr-4e058
+          entryPoint: ./Client # Specify the directory where firebase.json is located
