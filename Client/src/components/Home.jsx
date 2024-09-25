@@ -7,6 +7,8 @@ import beach from "../assets/beach.jpg";
 
 import { BestDestinationCard } from "./BestDestinationCard";
 import { ShortcutButtons } from "./ShortcutButtons";
+import { useEffect, useState } from "react";
+import { fetchDestinations } from "../services/destinationsService";
 44;
 
 const shortcutButtonsImages = [
@@ -17,6 +19,16 @@ const shortcutButtonsImages = [
 ];
 
 export const Home = () => {
+    const [destinations, setDestinations] = useState([]);
+
+    useEffect(() => {
+        const getDestinations = async () => {
+            const fetchedDestinations = await fetchDestinations();
+            setDestinations(fetchedDestinations);
+        };
+        getDestinations();
+    }, []);
+
     return (
         <>
             <div
