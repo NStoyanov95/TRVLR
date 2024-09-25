@@ -33,8 +33,58 @@ export const Home = () => {
     return (
         <>
             <HeroSection />
-            <div className="md:w-4/5 h-auto m-auto py-4 ">
-                <div className="md:flex grid-flow-row md:gap-2 lg:gap-9 justify-center">
+            <div className="bg-white">
+                <div className="md:w-4/5 h-auto m-auto md:p-10 2xl:w-1/2">
+                    <div>
+                        <div className="md:my-10">
+                            <h2>General Information</h2>
+                            <p className="text-gray-600">Travel tips</p>
+                        </div>
+                        <div className="md:flex justify-center items-baseline">
+                            <div className="flex flex-col gap-3 p-2">
+                                <i className="fas fa-sun text-orange-400 text-4xl fa-2x"></i>
+                                <h3>Weather</h3>
+                                <p>
+                                    We check the forecasts to help you make
+                                    informed decisions about long-term trips.
+                                </p>
+                            </div>
+                            <div className="flex flex-col gap-3 p-2">
+                                <i className="fas fa-dollar-sign text-orange-400 fa-2x"></i>
+                                <h3>Currency</h3>
+                                <p>
+                                    We help you exchange your money for the Euro
+                                    without any commissions.
+                                </p>
+                            </div>
+                            <div className="flex flex-col gap-3 p-2">
+                                <i className="fas fa-globe text-orange-400 fa-2x"></i>
+                                <h3>Language</h3>
+                                <p>
+                                    If you don`t speak French, we can suggest
+                                    you a personal English speaking guide.
+                                </p>
+                            </div>
+                            <div className="flex flex-col gap-3 p-2">
+                                <i className="fas fa-credit-card text-orange-400 fa-2x"></i>
+                                <h3>Visa</h3>
+                                <p>
+                                    Getting help to apply for a visa is simple,
+                                    we provide free consultations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="md:w-4/5 h-auto m-auto md:p-10 2xl:w-1/2">
+                <div className="my-10">
+                    <h2>Best Place to visit</h2>
+                    <p className="text-gray-600">
+                        An overview of the top attractions
+                    </p>
+                </div>
+                <div className="md:flex grid-flow-row md:gap-2 lg:gap-9 md:justify-center">
                     {destinations.map((destination) => (
                         <BestDestinationCard
                             key={destination.id}
@@ -66,15 +116,28 @@ export const Home = () => {
                     </p>
                 </div>
             </div>
-
-            <div className="md:flex md:w-4/5 m-auto 2xl:w-1/2 bg-white md:p-2 rounded">
-                {shortcutButtonsImages.map((image) => (
-                    <ShortcutButtons key={image.id} image={image.image} />
-                ))}
+            <div className="bg-white md:p-6 ">
+                <div className="2xl:w-1/2 m-auto md:w-4/5">
+                    <div className="m-auto my-10">
+                        <h2>Our Services</h2>
+                        <p className="text-gray-600">
+                            We take care of our clients and provide only
+                            high-quality services
+                        </p>
+                    </div>
+                    <div className="md:flex m-auto">
+                        {shortcutButtonsImages.map((image) => (
+                            <ShortcutButtons
+                                key={image.id}
+                                image={image.image}
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
             <div className="md:w-4/5 m-auto my-6 bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-center">Our Mission</h3>
-                <p>
+                <p className="text-gray-500">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sequi atque aliquid aspernatur, natus aut alias nostrum.
                     Eum, veritatis dolore corrupti repellat illum ab, tempora id
@@ -87,7 +150,7 @@ export const Home = () => {
             </div>
             <div className="md:w-4/5 m-auto my-6 bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-center">Why Us?</h3>
-                <p>
+                <p className="text-gray-500">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sequi atque aliquid aspernatur, natus aut alias nostrum.
                     Eum, veritatis dolore corrupti repellat illum ab, tempora id
