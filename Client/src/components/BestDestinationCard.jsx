@@ -8,9 +8,6 @@ export const BestDestinationCard = ({ image, description, city, country }) => {
                 <h5 className="mb-2 text-2xl font-bold tracking-tight">
                     {city}, {country}
                 </h5>
-                <p className="md:mb-11 font-normal text-gray-500">
-                    {description}
-                </p>
             </div>
         </div>
     );
