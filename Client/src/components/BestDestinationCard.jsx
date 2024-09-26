@@ -1,5 +1,3 @@
-import bolata from "../assets/bolata.jpg";
-
 export const BestDestinationCard = ({ image, description, city, country }) => {
     return (
         <div className="md:max-w-xs h-auto  bg-grey-600 text-black shadow-black bg-gray-100">

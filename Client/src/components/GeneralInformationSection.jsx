@@ -9,35 +9,41 @@ export const GeneralInformationSection = () => {
                     </div>
                     <div className="md:flex justify-center items-baseline">
                         <div className="flex flex-col gap-3 p-2">
-                            <i className="fas fa-sun text-orange-400 text-4xl fa-2x"></i>
+                            <i className="fas fa-sun text-green-400 text-4xl fa-2x"></i>
                             <h3>Weather</h3>
                             <p>
-                                We check the forecasts to help you make informed
-                                decisions about long-term trips.
+                                Stay informed with our detailed weather updates
+                                to plan your activities, whether you're heading
+                                to the Black Sea beaches or the mountain trails.
                             </p>
                         </div>
                         <div className="flex flex-col gap-3 p-2">
-                            <i className="fas fa-dollar-sign text-orange-400 fa-2x"></i>
+                            <i className="fas fa-dollar-sign text-green-400 fa-2x"></i>
                             <h3>Currency</h3>
                             <p>
-                                We help you exchange your money for the Euro
-                                without any commissions.
+                                Benefit from our commission-free currency
+                                exchange services, ensuring you get the most out
+                                of your money when converting to Bulgarian Lev
+                                (BGN).
                             </p>
                         </div>
                         <div className="flex flex-col gap-3 p-2">
-                            <i className="fas fa-globe text-orange-400 fa-2x"></i>
+                            <i className="fas fa-globe text-green-400 fa-2x"></i>
                             <h3>Language</h3>
                             <p>
-                                If you don`t speak French, we can suggest you a
-                                personal English speaking guide.
+                                While Bulgarian is the primary language, our
+                                service includes providing English-speaking
+                                guides to help you communicate and learn about
+                                local culture seamlessly.
                             </p>
                         </div>
                         <div className="flex flex-col gap-3 p-2">
-                            <i className="fas fa-credit-card text-orange-400 fa-2x"></i>
-                            <h3>Visa</h3>
+                            <i className="fa fa-handshake text-green-400 fa-2x"></i>
+                            <h3>Local Customs</h3>
                             <p>
-                                Getting help to apply for a visa is simple, we
-                                provide free consultations.
+                                Familiarize yourself with Bulgarian traditions
+                                and etiquette to enhance your interactions and
+                                experiences in local communities.
                             </p>
                         </div>
                     </div>

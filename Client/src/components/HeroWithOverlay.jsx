@@ -1,10 +1,10 @@
-import caravan from "../assets/caravan.jpeg";
+import rilaLakes from "../assets/rilaLakes.jpg";
 
 export const HeroWithOverlay = ({ title }) => {
     return (
         <div
             className="relative bg-cover bg-center w-full h-64 md:h-96 flex justify-center items-center text-white mb-5 md:m-0"
-            style={{ backgroundImage: `url(${caravan})` }}
+            style={{ backgroundImage: `url(${rilaLakes})` }}
         >
             <div className="absolute inset-0 bg-black bg-opacity-60"></div>
             <div className="relative">
