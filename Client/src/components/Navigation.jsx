@@ -21,7 +21,7 @@ export const Navigation = () => {
             </button>
 
             <ul
-                className={`md:hidden absolute flex flex-col gap-2 items-center right-0 top-16 mt-2 min-w-full bg-black text-white opacity-90 shadow-lg rounded-s p-2 z-50 ${
+                className={`md:hidden absolute flex flex-col gap-9 items-center justify-start right-0 top-16 mt-2 min-w-full  bg-black text-white opacity-90 shadow-lg rounded-s p-6 z-50 ${
                     isOpen ? "block" : "hidden"
                 } space-y-2 mt-3`}
             >
