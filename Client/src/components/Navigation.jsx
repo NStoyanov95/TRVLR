@@ -10,7 +10,9 @@ export const Navigation = () => {
     return (
         <nav className="flex justify-between items-baseline bg-gray-200 w-full shadow-lg">
             <div className="p-5">
-                <h3>TRVLR:</h3>
+                <Link to="/">
+                    <h3>TRVLR:</h3>
+                </Link>
             </div>
 
             <button
@@ -25,14 +27,6 @@ export const Navigation = () => {
                     isOpen ? "block" : "hidden"
                 } space-y-2 mt-3`}
             >
-                <li>
-                    <Link
-                        to="/"
-                        className="hover:font-bold cursor-pointer block"
-                    >
-                        Home
-                    </Link>
-                </li>
                 <li>
                     <Link
                         to="/about"
@@ -60,9 +54,6 @@ export const Navigation = () => {
             </ul>
 
             <ul className="hidden md:flex">
-                <li className="p-5 hover:font-bold cursor-pointer">
-                    <Link to="/">Home</Link>
-                </li>
                 <li className="p-5 hover:font-bold cursor-pointer">About Us</li>
                 <li className="p-5 hover:font-bold cursor-pointer">Contacts</li>
                 <li className="p-5 hover:font-bold cursor-pointer">
