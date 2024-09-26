@@ -6,7 +6,7 @@ export const ShortcutButtons = ({ image, description }) => {
                 className="md:w-64 h-56 shadow-lg m-auto bg-center bg-cover "
                 style={{ backgroundImage: `url(${image})` }}
             ></div>
-            <div className="text-center text-gray-600">
+            <div className="text-center py-3">
                 <p>{description}</p>
             </div>
         </div>
