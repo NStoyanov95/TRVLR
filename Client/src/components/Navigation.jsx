@@ -54,7 +54,9 @@ export const Navigation = () => {
             </ul>
 
             <ul className="hidden md:flex">
-                <li className="p-5 hover:font-bold cursor-pointer">About Us</li>
+                <li className="p-5 hover:font-bold cursor-pointer">
+                    <Link to="/about">About</Link>
+                </li>
                 <li className="p-5 hover:font-bold cursor-pointer">Contacts</li>
                 <li className="p-5 hover:font-bold cursor-pointer">
                     <Link to="/destinations">Destinations</Link>
