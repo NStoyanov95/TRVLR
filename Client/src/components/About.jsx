@@ -1,3 +1,5 @@
+import { HeroWithOverlay } from "./HeroWithOverlay";
+
 export const About = () => {
-    return <h1>About Page</h1>;
+    return <HeroWithOverlay title={"About Us"} />;
 };
