@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 export const ShortcutButtons = ({ image, description }) => {
     return (
         <div className="md:flex flex-col gap-1 shadow-xl md:p-1">
