@@ -23,6 +23,7 @@ export const DestinationsCatalog = () => {
                     {destinations.map((destination) => (
                         <DestinationCard
                             key={destination.id}
+                            id={destination.id}
                             image={destination.image}
                             city={destination.city}
                             country={destination.country}
