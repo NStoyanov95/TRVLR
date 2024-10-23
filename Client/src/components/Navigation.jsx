@@ -37,7 +37,7 @@ export const Navigation = () => {
                 </li>
                 <li>
                     <Link
-                        to="/contact"
+                        to="/contacts"
                         className="hover:font-bold cursor-pointer block"
                     >
                         Contacts
@@ -57,7 +57,9 @@ export const Navigation = () => {
                 <li className="p-5 hover:font-bold cursor-pointer">
                     <Link to="/about">About</Link>
                 </li>
-                <li className="p-5 hover:font-bold cursor-pointer">Contacts</li>
+                <li className="p-5 hover:font-bold cursor-pointer">
+                    <Link to="/contacts">Contacts</Link>
+                </li>
                 <li className="p-5 hover:font-bold cursor-pointer">
                     <Link to="/destinations">Destinations</Link>
                 </li>
