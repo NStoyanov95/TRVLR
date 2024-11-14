@@ -1,3 +1,9 @@
+import { HeroWithOverlay } from "./HeroWithOverlay";
+
 export const Contacts = () => {
-    return <h1>Contacts page</h1>;
+    return (
+        <>
+            <HeroWithOverlay title="Contacts" />
+        </>
+    );
 };
